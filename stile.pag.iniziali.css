@@ -1,0 +1,211 @@
+/* "holy grail" layout */
+#container {
+	margin: 0;
+	display: flex;
+	flex-direction:column;
+	min-height: 100vh;	
+}
+#header {
+	display: flex;
+	/*border: solid green;*/
+	flex-direction: column;
+}
+
+#footer {
+	/*border: solid;*/
+	display: flex;
+	flex-direction: column;
+	border-top: 8px solid white;
+}
+#content {
+	/*border: solid;*/
+	display: flex;
+	flex: 1;
+	background-image: linear-gradient(to top right, #FFFFFF 0%, #B2FFFF 50%, #23284F 100%);
+	padding: 1%;
+}
+
+#centralBox {
+	font-size: 1.8em;
+	/*border: solid;*/
+	flex: 1;
+	padding: 0 10px;
+}
+
+#leftBox {
+	order: -1;
+	flex-basis: 20%;
+}
+
+#rightBox {
+	display: flex;
+	flex-basis: 20%;
+	flex-direction: column; 
+	justify-content: space-evenly;
+}
+
+/* header */
+#firstRowHeader{
+	display: flex;
+	/*border: solid pink;*/
+	border-bottom: 8px solid white;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url(img/background/firstRow.avif);
+	/*background-size: 300px 300px;*/  /*primo modo*/
+	background-size: 15% 150%;			/*secondo modo*/
+}
+
+#secondRowHeader{
+	display: flex;
+	border-bottom: 8px solid white;
+	/*border: 2px solid green;*/
+	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
+	justify-content: center;	
+}
+
+#thirdRowHeader{
+	/*border: 2px solid red;*/
+	border-bottom: 4px solid white;
+}
+ 
+/* firstRowHeader elements */
+#login{
+	font-size: 1.5em;
+	margin-right: 3%;
+}
+
+#login a:link {
+	color: white;
+	text-decoration: none;
+}
+
+#login a:hover{
+	color: fuchsia;
+	font-size: 120%;
+	border: 3px dotted fuchsia;
+	border-radius: 10px ;
+	padding: 10%;
+}
+
+/* secondRowHeader element */
+.social {
+	margin: 1%;	
+}
+
+/* thirdRowHeader element */
+#thirdRowHeader img {
+	width: 100%;
+}
+
+/* footer */
+#firstRowFooter {
+	display: flex;
+	flex-direction: row;
+	background-image: url(img/background/firstRow.avif);
+	background-size: 15% 150%;
+	color: white;
+	text-align: center;
+	font-family: arial;
+	/*border: solid aqua;*/
+	justify-content: space-evenly;
+}
+
+#secondRowFooter{
+	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
+	border-top: 8px solid white;
+	color: white;
+	font-family: arial;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 2%;	
+}
+
+
+/* firstRowFooter elements */
+#telefono{
+	list-style-image: url(img/puntiLista/telefono.png);
+	padding-bottom: 5%;
+}
+
+#posizione{
+	list-style-image: url(img/puntiLista/posizione.png);
+	padding-bottom: 5%;
+}
+
+#mail{
+	list-style-image: url(img/puntiLista/mail.png);
+}
+
+
+
+/* menu*/
+#menu {
+	/*border: 1px solid black;*/
+	position: sticky;
+	top: 0;
+}
+
+#menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li {
+	border-bottom: 2px solid white;
+}
+
+#menu li a:link, #menu li a:visited {
+	font-size: 160%;
+	display: block;
+	padding: 0.4em 0 1em 0.5em;
+	border-left: 12px solid black;
+	border-right: 5px solid black;
+	background-color: #00AAE4;
+	color: white;
+	text-decoration: none;
+}
+
+#menu li a:hover {
+	background-color: #2595AB;
+	color: white;
+}
+
+#menu li a:active {
+	background-color: #100303;
+	color: white;
+}
+
+/* eventuali css centralBox */
+#loginAlternativo a:link, a:visited {
+	color: fuchsia;
+	text-decoration: none;
+	
+}
+
+#loginAlternativo a:hover {
+	text-decoration: underline;
+}
+
+#centralBox h3 {
+	text-decoration: underline #00AAE4;
+}
+
+#centralBox hr {
+	height: 5px;
+	background-color: fuchsia;
+}
+
+/* rightBox */
+#rightBox img{
+	width: 100%;
+	border: solid white;
+	border-radius: 50px;
+}
+
+.caption {
+	/*border: solid;*/
+	margin:0;
+	text-align: center;	
+}
