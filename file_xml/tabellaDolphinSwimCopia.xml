@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tabellaDolphinSwim SYSTEM "file_dtd_xsd/tabellaDolphinSwim.dtd">
+ 
+ <!--<tabellaDolphinSwim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="file_dtd_xsd/tabellaDolphinSwim.xsd">-->
+<tabellaDolphinSwim>
+  <service serviceId="ds1">
+    <nomeServizio>Dolphin Swimming</nomeServizio>
+    <data>2024-08-10</data>
+    <costo>89</costo>
+  </service>
+  
+    <service serviceId="ds2">
+    <nomeServizio>Dolphin Swimming</nomeServizio>
+    <data>2024-08-11</data>
+    <costo>89</costo>
+  </service>
+  
+  </tabellaDolphinSwim>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="tabellaUser">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="user"  minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="user">
+   <xsd:complexType>
+      <xsd:sequence>
+         <xsd:element name="username" type="xsd:string" />
+         <xsd:element name="password" type="xsd:string" />
+         <xsd:element name="genere" type="xsd:string"  />
+         <xsd:element name="nazione" type="xsd:string" />
+         <xsd:element name="tipologia" type="xsd:string" />
+         <xsd:element name="sommeSpese" type="xsd:float"/>
+         <xsd:element name="ban" type="xsd:string" />
+          <xsd:element ref="serviziAcquistati" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+      
+      <xsd:attribute name="userId" type="xsd:ID" use="required" />
+    </xsd:complexType>
+</xsd:element>
+
+ <xsd:element name="serviziAcquistati">
+   <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="servizio" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="servizio">
+   <xsd:complexType>
+    <xsd:attribute name="serviceId" type="xsd:ID" use="required" />
+    <xsd:attribute name="tipoServizio" use="optional">
+      <xsd:simpleType>
+	      <xsd:restriction base="xsd:string">
+	        <xsd:enumeration value="whaleWatching"/>
+	        <xsd:enumeration value="dolphinSwimming"/>
+	        <xsd:enumeration value="sharkDiving"/>
+	      </xsd:restriction>
+      </xsd:simpleType>
+   </xsd:attribute>
+   <xsd:attribute name="quanteCopie" type="xsd:integer" use="required" />
+   </xsd:complexType>
+</xsd:element>
+  
+</xsd:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT tabellaSharkDive (service*)>
+<!ELEMENT service (nomeServizio, data, costo)>
+<!ATTLIST service
+            serviceId ID #REQUIRED>
+      
+  <!ELEMENT nomeServizio (#PCDATA)>
+   <!ELEMENT data (#PCDATA)>
+  <!ELEMENT costo (#PCDATA)>

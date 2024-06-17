@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT tabellaUser (user+)>
+<!ELEMENT user (username, password, genere, nazione,  tipologia, sommeSpese, ban, serviziAcquistati?)>
+<!ATTLIST user
+                userId ID #REQUIRED>
+                
+  <!ELEMENT username (#PCDATA)>
+  <!ELEMENT password (#PCDATA)>
+  <!ELEMENT genere (#PCDATA)>
+  <!ELEMENT nazione (#PCDATA)>
+  <!ELEMENT tipologia (#PCDATA)>
+  <!ELEMENT sommeSpese (#PCDATA)>
+  <!ELEMENT ban (#PCDATA)>
+  <!ELEMENT serviziAcquistati (servizio+)>
+  <!ELEMENT servizio EMPTY>
+  <!ATTLIST servizio
+                    serviceId ID #REQUIRED
+                    tipoServizio (whaleWatching | dolphinSwimming | sharkDiving)  #REQUIRED
+                    quanteCopie CDATA #REQUIRED>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="tabellaDolphinSwim">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="service"  minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="service">
+   <xsd:complexType>
+      <xsd:sequence>
+         <xsd:element name="nomeServizio" type="xsd:string" />
+         <xsd:element name="data" type="xsd:date" />
+         <xsd:element name="costo" type="xsd:float"  />
+      </xsd:sequence>
+      
+      <xsd:attribute name="serviceId" type="xsd:ID" use="required" />
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

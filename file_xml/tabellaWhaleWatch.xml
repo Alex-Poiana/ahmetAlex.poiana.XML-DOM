@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tabellaWhaleWatch SYSTEM "file_dtd_xsd/tabellaWhaleWatch.dtd">
+ 
+ <!--<tabellaWhaleWatch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="file_dtd_xsd/tabellaWhaleWatch.xsd">-->
+<tabellaWhaleWatch>
+  <service serviceId="ww1">
+    <nomeServizio>Whale Watching</nomeServizio>
+    <data>2024-07-26</data>
+    <costo>75</costo>
+  </service>
+  
+    <service serviceId="ww2">
+    <nomeServizio>Whale Watching</nomeServizio>
+    <data>2024-07-29</data>
+    <costo>75</costo>
+  </service>
+  
+  </tabellaWhaleWatch>

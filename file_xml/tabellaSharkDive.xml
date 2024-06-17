@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tabellaSharkDive SYSTEM "file_dtd_xsd/tabellaSharkDive.dtd">
+ 
+<!-- <tabellaSharkDive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="file_dtd_xsd/tabellaSharkDive.xsd">-->
+<tabellaSharkDive>
+  <service serviceId="sh1">
+    <nomeServizio>Shark Diving</nomeServizio>
+    <data>2024-07-25</data>
+    <costo>89</costo>
+  </service>
+  
+    <service serviceId="sh2">
+    <nomeServizio>Shark Diving</nomeServizio>
+    <data>2024-07-28</data>
+    <costo>89</costo>
+  </service>
+  
+  </tabellaSharkDive>
