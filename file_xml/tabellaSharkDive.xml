@@ -7,13 +7,13 @@
   <service serviceId="sh1">
     <nomeServizio>Shark Diving</nomeServizio>
     <data>2024-07-25</data>
-    <costo>89</costo>
+    <costo>135</costo>
   </service>
   
     <service serviceId="sh2">
     <nomeServizio>Shark Diving</nomeServizio>
     <data>2024-07-28</data>
-    <costo>89</costo>
+    <costo>135</costo>
   </service>
   
   </tabellaSharkDive>
