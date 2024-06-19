@@ -78,7 +78,7 @@
 					</p>
 					
 					<p>Password<br /> 
-						<input type="text" name="password" size="30" />
+						<input type="password" name="password" size="30" />
 					</p>
 					
 					<p id="signUp"><a href="xml.OL.registrazione.php"> Signup </a></p>

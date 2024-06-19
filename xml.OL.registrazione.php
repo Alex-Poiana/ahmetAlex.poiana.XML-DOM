@@ -130,11 +130,11 @@
 					</p>
 					
 					<p> Password <br /> 
-						<input type="text" name="password" size="30" />
+						<input type="password" name="password" size="30" />
 					</p>
 					
 					<p> Conferma Password <br /> 
-						<input type="text" name="confPassword" size="30" />
+						<input type="password" name="confPassword" size="30" />
 					</p>
 					
 					<p> Genere: <br /> 
